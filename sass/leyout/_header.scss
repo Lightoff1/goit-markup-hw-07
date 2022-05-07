@@ -1,48 +1,3 @@
-@charset "UTF-8";
-:root {
-  --primary-text-color: #757575;
-  --secondary-text-color: #212121;
-  --tertiary-text-color: #ffffff;
-  --accent-color: #2196f3;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* .font-family: "Raleway", sans-serif;
-.font-family: "Roboto", sans-serif; */
-/* Web-studio */
-body {
-  background-color: #ffffff;
-  color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
-}
-
-.list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.link {
-  text-decoration: none;
-}
-
-/* Палитра цветов студия*/
-/* #212121 вторичный цвет */
-/* #757575 цвет основного текста */
-/* #2196F3 акцент и "web" в лого */
-/* #FFFFFF третичный белый, основной фон и фон шапки */
-/* #000000 "studio" в лого чёрный */
-/* #2F303A цвет фона героя и футера */
-/* #F5F4FA цвет фона секции "наша команда" и кнопки фильтров */
-/* rgba(255, 255, 255, 0.6) цвет e-mail и номера телефона футер */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  /* outline: 2px solid tomato; */
-}
-
 /* Стилизируем header */
 .header {
   background-color: var(--tertiary-text-color);
@@ -80,11 +35,10 @@ body {
 /* --------------Элементы навигации---------- */
 .nav-menu {
   display: flex;
-  margin-left: 93px;
+  margin-left: 93px ;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
+  }
 .nav-menu__link {
   transition-property: color;
   transition-duration: 250ms;
@@ -95,7 +49,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-
 .nav-menu .nav-menu__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -104,12 +57,10 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .link.current {
   position: relative;
 }
-
-.link.current::after {
+.link.current::after{
   content: "";
   position: absolute;
   display: block;
@@ -119,12 +70,10 @@ body {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
-
+  }
 .header-contacts {
   margin-left: auto;
 }
-
 .header-contacts__mail {
   margin-right: 30px;
 }
@@ -146,6 +95,7 @@ body {
 .nav-menu__link:hover,
 .nav-menu__link:focus {
   color: var(--accent-color);
+
 }
 
 .header-contacts .header-contacts__mail:hover,
@@ -158,9 +108,9 @@ body {
 .header-contacts__icon,
 .header-phone-icon {
   margin-right: 10px;
-  fill: currentColor;
+  fill: currentColor
 }
 
 .nav-menu .link.current {
   color: var(--accent-color);
-}/*# sourceMappingURL=main.css.map */
+}
