@@ -57,7 +57,7 @@ body {
   align-items: center;
 }
 
-.logo-web {
+.header__logo-web {
   padding-bottom: 25px;
   padding-top: 24px;
   color: var(--accent-color);
@@ -68,7 +68,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo-studio-head {
+.header__logo-studio {
   padding-bottom: 25px;
   padding-top: 24px;
   color: #000000;
@@ -80,13 +80,13 @@ body {
 }
 
 /* --------------Элементы навигации---------- */
-.nav-item-list {
+.nav-menu {
   display: flex;
   margin-left: 93px ;
   padding-top: 32px;
   padding-bottom: 32px;
   }
-.nav-item-link {
+.nav-menu__link {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
@@ -96,11 +96,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.nav-item-list .item:not(:last-child) {
+.nav-menu .nav-menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-item-list .nav-item-link {
+.nav-menu .nav-menu__link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -121,12 +121,12 @@ body {
 .header-contacts {
   margin-left: auto;
 }
-.mail-header {
-  margin-right: 50px;
+.header-contacts__mail {
+  margin-right: 30px;
 }
 
-.header-contacts .mail-header,
-.header-contacts .phone-header {
+.header-contacts .header-contacts__mail,
+.header-contacts .header-contacts__phone {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
@@ -139,26 +139,26 @@ body {
   color: var(--primary-text-color);
 }
 
-.nav-item-link:hover,
-.nav-item-link:focus {
+.nav-menu__link:hover,
+.nav-menu__link:focus {
   color: var(--accent-color);
 
 }
 
-.header-contacts .mail-header:hover,
-.header-contacts .mail-header:focus,
-.header-contacts .phone-header:hover,
-.header-contacts .phone-header:focus {
+.header-contacts .header-contacts__mail:hover,
+.header-contacts .header-contacts__mail:focus,
+.header-contacts .header-contacts__phone:hover,
+.header-contacts .header-contacts__phone:focus {
   color: var(--accent-color);
 }
 
-.header-mail-icon,
+.header-contacts__icon,
 .header-phone-icon {
   margin-right: 10px;
   fill: currentColor
 }
 
-.nav-item-list .link.current {
+.nav-menu .link.current {
   color: var(--accent-color);
 }
 
@@ -179,7 +179,7 @@ body {
     background-size: cover;
   }
 
-.hero-title {
+.hero__title {
   color: var(--tertiary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -190,7 +190,7 @@ body {
   margin-bottom: 30px;
 }
 
-.hero-button {
+.hero__button {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
@@ -209,8 +209,8 @@ body {
   height: 50px;
   border-radius: 4px;
   }
-  .hero-button:hover,
-  .hero-button:focus{
+  .hero__button:hover,
+  .hero__button:focus{
     background-color: #188CE8;
   }
 
@@ -219,7 +219,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.feature-icon-area {
+.feature {
   display: flex;
   width: 270px;
   height: 120px;
@@ -228,11 +228,11 @@ body {
   background-color: #F5F4FA;
   border-radius: 4px;
 }
-.features-list-title{
+.features__title {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.features-title {
+.each-feature__title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -242,16 +242,16 @@ body {
   margin-bottom: 10px;
   margin-top: 30px;
 }
-.features-list {
+.features-menu {
   display: flex;
   }
-.features-list .item{
+.features-menu .features-menu__item{
   width: 270px;    
 }
-  .features-list .item:not(:last-child){
+  .features-menu .features-menu__item:not(:last-child){
   margin-right: 30px;
   }
-.features-item {
+.each-feature__item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
