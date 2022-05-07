@@ -6,7 +6,6 @@ body {
   background-color: #ffffff;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
-
 }
 
 .list {
@@ -28,11 +27,3 @@ body {
 /* #2F303A цвет фона героя и футера */
 /* #F5F4FA цвет фона секции "наша команда" и кнопки фильтров */
 /* rgba(255, 255, 255, 0.6) цвет e-mail и номера телефона футер */
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  /* outline: 2px solid tomato; */
-}
