@@ -39,27 +39,25 @@
 .footer-contacts {
   display: flex;
   flex-direction: column;
+  .mail,
+  .phone {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .mail:hover,
+  .mail:focus,
+  .phone:hover,
+  .phone:focus {
+    color: var(--accent-color);
+  }
 }
 .mail {
   margin-bottom: 9px;
-}
-
-.footer-contacts .mail,
-.footer-contacts .phone {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-contacts .mail:hover,
-.footer-contacts .mail:focus,
-.footer-contacts .phone:hover,
-.footer-contacts .phone:focus {
-  color: var(--accent-color);
 }
 
 .second-footer-list-title {
@@ -69,7 +67,6 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   margin-top: 12px;
   margin-bottom: 20px;
 }

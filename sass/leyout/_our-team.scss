@@ -6,11 +6,6 @@
   padding-top: 94px;
 }
 
-.our-team-list .item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
 .our-team-title,
 .regular-clients-title {
   color: var(--secondary-text-color);
@@ -27,10 +22,16 @@
 
 .our-team-list {
   display: flex;
+  .item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.our-team-list .item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .our-team-sign {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -70,20 +71,21 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  .team-spec-soc-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
 }
-.team-spec-soc-link .team-spec-soc-icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
+
 .team-spec-soc-icon {
   fill: #afb1b8;
 }
 .team-spec-soc-link:hover,
 .team-spec-soc-link:focus {
   background-color: var(--accent-color);
-}
-.team-spec-soc-link:hover .team-spec-soc-icon,
-.team-spec-soc-link:focus .team-spec-soc-icon {
-  fill: var(--tertiary-text-color);
+  .team-spec-soc-icon,
+  .team-spec-soc-icon {
+    fill: var(--tertiary-text-color);
+  }
 }

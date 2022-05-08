@@ -14,10 +14,11 @@
 }
 .what-are-we-doing-list {
   display: flex;
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.what-are-we-doing-list .item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .what-are-we-doing-image {
   display: block;
 }

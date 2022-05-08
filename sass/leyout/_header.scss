@@ -1,14 +1,14 @@
 /* Стилизируем header */
 .header {
   background-color: var(--tertiary-text-color);
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Логотип */
-.header .container {
-  display: flex;
-  align-items: center;
-}
 
 .header__logo-web {
   padding-bottom: 25px;
@@ -35,10 +35,20 @@
 /* --------------Элементы навигации---------- */
 .nav-menu {
   display: flex;
-  margin-left: 93px ;
+  margin-left: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
+  .nav-menu__item:not(:last-child) {
+    margin-right: 50px;
   }
+  .nav-menu__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .link.current {
+    color: var(--accent-color);
+  }
+}
 .nav-menu__link {
   transition-property: color;
   transition-duration: 250ms;
@@ -49,18 +59,11 @@
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.nav-menu .nav-menu__item:not(:last-child) {
-  margin-right: 50px;
-}
 
-.nav-menu .nav-menu__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 .link.current {
   position: relative;
 }
-.link.current::after{
+.link.current::after {
   content: "";
   position: absolute;
   display: block;
@@ -70,47 +73,40 @@
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  }
+}
 .header-contacts {
   margin-left: auto;
+  .header-contacts__mail,
+  .header-contacts__phone {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+  .header-contacts__mail:hover,
+  .header-contacts__mail:focus,
+  .header-contacts__phone:hover,
+  .header-contacts__phone:focus {
+    color: var(--accent-color);
+  }
 }
 .header-contacts__mail {
   margin-right: 30px;
 }
 
-.header-contacts .header-contacts__mail,
-.header-contacts .header-contacts__phone {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
-
 .nav-menu__link:hover,
 .nav-menu__link:focus {
-  color: var(--accent-color);
-
-}
-
-.header-contacts .header-contacts__mail:hover,
-.header-contacts .header-contacts__mail:focus,
-.header-contacts .header-contacts__phone:hover,
-.header-contacts .header-contacts__phone:focus {
   color: var(--accent-color);
 }
 
 .header-contacts__icon,
 .header-phone-icon {
   margin-right: 10px;
-  fill: currentColor
-}
-
-.nav-menu .link.current {
-  color: var(--accent-color);
+  fill: currentColor;
 }

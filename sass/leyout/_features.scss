@@ -28,13 +28,14 @@
 }
 .features-menu {
   display: flex;
+  .features-menu__item {
+    width: 270px;
+  }
+  .features-menu__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.features-menu .features-menu__item {
-  width: 270px;
-}
-.features-menu .features-menu__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .each-feature__item {
   font-size: 14px;
   line-height: 1.71;

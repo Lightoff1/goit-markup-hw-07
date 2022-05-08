@@ -59,6 +59,9 @@ textarea {
   height: 342px;
   margin-left: auto;
   margin-right: auto;
+  .modal-form-field:nth-child(-n + 3) {
+    margin-bottom: 10px;
+  }
 }
 .input-wrap {
   position: relative;
@@ -93,9 +96,6 @@ textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-}
-.modal-form-inputs .modal-form-field:nth-child(-n + 3) {
-  margin-bottom: 10px;
 }
 
 .modal-text-area {
@@ -141,7 +141,7 @@ textarea {
   position: absolute;
 }
 .modal-form-agree::before {
-  content: "";
+  content: " ";
   display: inline-block;
   align-items: center;
   width: 16px;
@@ -149,6 +149,7 @@ textarea {
   border: 2px solid;
   border-color: #212121;
   border-radius: 3px;
+  margin-right: 7px;
 }
 .modal-form-check-input:checked + .modal-form-agree::before {
   border-color: var(--accent-color);
