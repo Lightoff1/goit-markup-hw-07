@@ -48,12 +48,10 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-  }
-  .mail:hover,
-  .mail:focus,
-  .phone:hover,
-  .phone:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 .mail {
@@ -84,6 +82,10 @@
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .our-soc-item + .our-soc-item {
   margin-left: 10px;
@@ -91,11 +93,6 @@
 .our-soc-icon {
   fill: var(--tertiary-text-color);
 }
-.our-soc-link:hover,
-.our-soc-link:focus {
-  background-color: var(--accent-color);
-}
-
 /* --------------Форма подписки--------- */
 
 .form-email-footer-field {

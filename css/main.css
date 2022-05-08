@@ -104,11 +104,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+.nav-menu__link:hover, .nav-menu__link:focus {
+  color: var(--accent-color);
+}
 
 .link.current {
   position: relative;
 }
-
 .link.current::after {
   content: "";
   position: absolute;
@@ -137,8 +139,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.header-contacts .header-contacts__mail:hover,
-.header-contacts .header-contacts__mail:focus,
+.header-contacts .header-contacts__mail:hover, .header-contacts .header-contacts__mail:focus,
 .header-contacts .header-contacts__phone:hover,
 .header-contacts .header-contacts__phone:focus {
   color: var(--accent-color);
@@ -146,11 +147,6 @@ body {
 
 .header-contacts__mail {
   margin-right: 30px;
-}
-
-.nav-menu__link:hover,
-.nav-menu__link:focus {
-  color: var(--accent-color);
 }
 
 .header-contacts__icon,
@@ -203,9 +199,7 @@ body {
   height: 50px;
   border-radius: 4px;
 }
-
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
 }
 
@@ -519,8 +513,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-contacts .mail:hover,
-.footer-contacts .mail:focus,
+.footer-contacts .mail:hover, .footer-contacts .mail:focus,
 .footer-contacts .phone:hover,
 .footer-contacts .phone:focus {
   color: var(--accent-color);
@@ -557,6 +550,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.our-soc-link:hover, .our-soc-link:focus {
+  background-color: var(--accent-color);
+}
 
 .our-soc-item + .our-soc-item {
   margin-left: 10px;
@@ -564,11 +560,6 @@ body {
 
 .our-soc-icon {
   fill: var(--tertiary-text-color);
-}
-
-.our-soc-link:hover,
-.our-soc-link:focus {
-  background-color: var(--accent-color);
 }
 
 /* --------------Форма подписки--------- */
@@ -676,9 +667,7 @@ button {
   border-radius: 4px;
   border: 0;
 }
-
-.filter-button:hover,
-.filter-button:focus {
+.filter-button:hover, .filter-button:focus {
   color: var(--tertiary-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -781,8 +770,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--tertiary-text-color);
 }
-
-.modal-close:hover + .close-icon {
+.modal-close:hover, .modal-close:focus {
   fill: var(--accent-color);
 }
 
@@ -856,12 +844,8 @@ textarea {
   border-radius: 4px;
   outline: none;
 }
-
-.modal-form-input:focus {
+.modal-form-input:focus, .modal-form-input:focus + .modal-icon {
   border-color: var(--accent-color);
-}
-
-.modal-form-input:focus + .modal-icon {
   fill: var(--accent-color);
 }
 
@@ -880,11 +864,9 @@ textarea {
   border-radius: 4px;
   outline: none;
 }
-
 .modal-text-area:focus {
   border-color: var(--accent-color);
 }
-
 .modal-text-area::placeholder {
   font-size: 12px;
   line-height: 14px;
@@ -914,12 +896,6 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-.modal-form-check-input {
-  appearance: none;
-  position: absolute;
-}
-
 .modal-form-agree::before {
   content: " ";
   display: inline-block;
@@ -932,6 +908,10 @@ textarea {
   margin-right: 7px;
 }
 
+.modal-form-check-input {
+  appearance: none;
+  position: absolute;
+}
 .modal-form-check-input:checked + .modal-form-agree::before {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -970,16 +950,9 @@ textarea {
   letter-spacing: 0.06em;
   border-radius: 4px;
 }
-
-.modal-form-submit-btn:hover,
-.modal-form-submit-btn:focus {
+.modal-form-submit-btn:hover, .modal-form-submit-btn:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  fill: var(--accent-color);
 }
 
 .is-hidden {
